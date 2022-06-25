@@ -25,4 +25,9 @@ public abstract class Item implements ISell {
     public double getSellingPrice() {
         return sellingPrice;
     }
+
+
+    public double getMargin() {
+        return sellingPrice - acquisitionPrice;
+    }
 }

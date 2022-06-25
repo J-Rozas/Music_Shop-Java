@@ -37,4 +37,9 @@ public class GuitarTest {
     public void hasNumberOfStrings() {
         assertEquals(6, guitar.getNumberOfStrings());
     }
+
+    @Test
+    public void shouldBeAbleToCalculateMarginWhenSelling() {
+        assertEquals(259.15, guitar.getMargin(), 0.001);
+    }
 }
